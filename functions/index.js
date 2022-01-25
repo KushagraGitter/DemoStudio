@@ -1,42 +1,18 @@
-//const functions = require("firebase-functions");
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
-// const {Configuration, OpenAIApi} = require("openai");
-// const config = new Configuration({
-//   organization: "org-OHKIgmWRanc7raqtDMYAq84g",
-//   apiKey: "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",
-// });
-
-// const openai = new OpenAIApi(config);
-
-// const Alpaca = require('@alpacahq/alpaca-trade-api');
-// const alpaca = new Alpaca({
-//   keyId: 'PK1O1VPUPNSQX1DAAQ0M', // REPLACE with your API credentials
-//   secretKey: 'kUou0h9nh61WR7maANoQeZN3ZRGV3uZZgelnwHE1', // REPLACE with your API credentials
-//   paper: true,
-// });
-
 const functions = require('firebase-functions');
 
 //// SDK Config ////
 
 const { Configuration, OpenAIApi } = require('openai');
 const configuration = new Configuration({
-  organization: 'org-OHKIgmWRanc7raqtDMYAq84g', // REPLACE with your API credentials
-  apiKey: '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', // REPLACE with your API credentials
+  organization: '', // REPLACE with your API credentials
+  apiKey: '', // REPLACE with your API credentials
 });
 const openai = new OpenAIApi(configuration);
 
 const Alpaca = require('@alpacahq/alpaca-trade-api');
 const alpaca = new Alpaca({
-  keyId: 'PK1O1VPUPNSQX1DAAQ0M', // REPLACE with your API credentials
-  secretKey: 'kUou0h9nh61WR7maANoQeZN3ZRGV3uZZgelnwHE1', // REPLACE with your API credentials
+  keyId: '', // REPLACE with your API credentials
+  secretKey: '', // REPLACE with your API credentials
   paper: true,
 });
 
